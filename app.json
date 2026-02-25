@@ -1,7 +1,8 @@
+
 {
   "expo": {
     "name": "Lara",
-    "slug": "Lara",
+    "slug": "build-me-a-task-mana-uxlerl",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/app-icon-uwl.png",
@@ -25,7 +26,11 @@
         "backgroundColor": "#000000"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.anonymous.Natively"
+      "package": "com.larapp.app",
+      "permissions": [
+        "INTERNET",
+        "VIBRATE"
+      ]
     },
     "web": {
       "favicon": "./assets/images/final_quest_240x240.png",
@@ -34,9 +39,19 @@
     "plugins": [
       "expo-font",
       "expo-router",
-      "expo-web-browser"
+      "expo-web-browser",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 35,
+            "targetSdkVersion": 35,
+            "buildToolsVersion": "35.0.0"
+          }
+        }
+      ]
     ],
-    "scheme": "Lara",
+    "scheme": "lara",
     "experiments": {
       "typedRoutes": true
     },
