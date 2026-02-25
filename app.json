@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "build-me-a-task-mana",
-    "slug": "build-me-a-task-mana",
+    "name": "Lara",
+    "slug": "Lara",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/app-icon-ssz.png",
+    "icon": "./assets/images/app-icon-uwl.png",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/images/app-icon-ssz.png",
+      "image": "./assets/images/app-icon-uwl.png",
       "resizeMode": "contain",
       "backgroundColor": "#000000"
     },
@@ -21,7 +21,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/app-icon-ssz.png",
+        "foregroundImage": "./assets/images/app-icon-uwl.png",
         "backgroundColor": "#000000"
       },
       "edgeToEdgeEnabled": true,
@@ -36,7 +36,7 @@
       "expo-router",
       "expo-web-browser"
     ],
-    "scheme": "build-me-a-task-mana",
+    "scheme": "Lara",
     "experiments": {
       "typedRoutes": true
     },
