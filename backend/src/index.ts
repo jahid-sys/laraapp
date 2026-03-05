@@ -1,18 +1,18 @@
 import { createApplication } from "@specific-dev/framework";
-import * as appSchema from './db/schema/schema.js';
-import * as authSchema from './db/schema/auth-schema.js';
-import { registerTaskRoutes } from './routes/tasks.js';
+import * as schema from './db/schema/schema.js';
 
-const schema = { ...appSchema, ...authSchema };
+// Import route registration functions
+// import { registerUserRoutes } from './routes/users.js';
 
+// Create application with schema for full database type support
 export const app = await createApplication(schema);
-export type App = typeof app;
 
-app.withAuth();
+// Export App type for use in route files
+export type App = typeof app;
 
 // Register routes - add your route modules here
 // IMPORTANT: Always use registration functions to avoid circular dependency issues
-registerTaskRoutes(app);
+// registerUserRoutes(app);
 
 await app.run();
 app.logger.info('Application running');
